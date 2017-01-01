@@ -1,0 +1,33 @@
+{
+  "name": "pm2-nginx-slack",
+  "version": "1.0.0",
+  "description": "PM2 Module to tail nginx error, access logs and send them to slack",
+  "main": "app.js",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "pmx": "beta",
+    "request": "^2.79.0",
+    "tail": "^1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harshithkashyap/pm2-nginx-slack.git"
+  },
+  "config": {
+    "slack_url": null,
+    "access_log_path": null,
+    "error_log_path": null
+  },
+  "apps": [
+    {
+      "merge_logs": true,
+      "max_memory_restart": "200M",
+      "script": "app.js"
+    }
+  ],
+  "author": "Harshith Kashyap (https://github.com/harshithkashyap)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.12.2"
+  }
+}
