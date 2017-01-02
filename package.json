@@ -27,7 +27,7 @@
     "slack_error_log_url": null,
     "access_log_path": "/var/log/nginx/access.log",
     "error_log_path": "/var/log/nginx/error.log",
-    "tail_access_log": true,
+    "tail_access_log": false,
     "tail_error_log": true
   },
   "apps": [
