@@ -28,7 +28,8 @@
     "access_log_path": "/var/log/nginx/access.log",
     "error_log_path": "/var/log/nginx/error.log",
     "tail_access_log": false,
-    "tail_error_log": true
+    "tail_error_log": true,
+    "status_codes": "400, 401, 403"
   },
   "apps": [
     {
