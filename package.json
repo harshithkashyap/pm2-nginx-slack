@@ -1,6 +1,6 @@
 {
   "name": "pm2-nginx-slack",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "PM2 Module to tail nginx error, access logs and send them to slack",
   "main": "app.js",
   "dependencies": {
