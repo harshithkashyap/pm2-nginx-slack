@@ -10,16 +10,25 @@
     "tail": "^1.2.1"
   },
   "scripts": {
+    "test": "npm run lint",
     "lint": "eslint ."
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/harshithkashyap/pm2-nginx-slack.git"
   },
+  "keywords": [
+    "pm2",
+    "nginx",
+    "slack"
+  ],
   "config": {
-    "slack_url": null,
-    "access_log_path": null,
-    "error_log_path": null
+    "slack_access_log_url": null,
+    "slack_error_log_url": null,
+    "access_log_path": "/var/log/nginx/access.log",
+    "error_log_path": "/var/log/nginx/error.log",
+    "tail_access_log": true,
+    "tail_error_log": true
   },
   "apps": [
     {
