@@ -1,4 +1,4 @@
-## Nginx logs to Slack
+## Stream Nginx logs to Slack
 [![Build Status](https://travis-ci.org/harshithkashyap/pm2-nginx-slack.svg?branch=master)](https://travis-ci.org/harshithkashyap/pm2-nginx-slack)
 
 This module tails nginx error, access logs using [node-tail](https://github.com/lucagrulla/node-tail) and sends them to the specified slack channel.
